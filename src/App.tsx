@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './assets/solanahub-logo.svg';
 import './App.css';
 import ToolCard from './tool';
 
@@ -29,22 +29,22 @@ function App() {
     desc: 'The ultimate community-driven onboarding app for Solana users'
   }
   ]
-  
+
   return (
     <div className="App">
       <div id="app-show-case">
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={1}>
-            <Grid item xs={3}>
+            <Grid item xs={12} md={3}>
               <ToolCard tool={apps[0]} />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} md={3}>
               <ToolCard tool={apps[1]} />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} md={3}>
               <ToolCard tool={apps[2]} />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} md={3}>
               <ToolCard tool={apps[3]} />
             </Grid>
           </Grid>

@@ -29,7 +29,7 @@ export default function ToolCard ({tool}: any) {
           {tool.desc}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions style={{width: '100%',justifyContent: 'center'}}>
         <a target='_blank' href={tool.url}>
         <Button size="small">Learn More</Button>
         </a>

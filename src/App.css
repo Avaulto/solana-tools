@@ -16,16 +16,39 @@ svg{
 }
 .App {
   text-align: center;
-  width: 900px;
+  width: 95%;
   max-width: 100%;
-    margin: 0 auto;
+    margin: 100px auto;
+}
+
+#app-show-case{
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+.item{
+  overflow: hidden;
+  height: 260px;
+}
+
+#app-show-case .overlay {
+  width: 880px;
+  z-index: 2;
+  position: absolute;
+  height: 680px;
+  transform: scale(0.4, 0.4);
+  transform-origin: top left;
+}
+.tool  {
+  width: 880px;
+  height: 650px;
+  transform: scale(0.4, 0.4);
+  transform-origin: top left;
 }
 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 #love {
   color: #fff;
   width: 200px;
@@ -69,25 +92,4 @@ svg{
 
 .App-link {
   color: #61dafb;
-}
-
-.loader {
-  border: 6px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 6px solid #c95fc1;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
-  margin: 20px auto;
-}
-
-/* Safari */
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
