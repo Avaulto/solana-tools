@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#app-show-case{
+  display: flex;
+  align-items: start;
+  height: 60vh;
+  overflow: hidden;
+}
+.item{
+  overflow: hidden;
+  height: 260px;
+}
+
+#app-show-case .item{
+}
+#app-show-case .overlay {
+  width: 60% !important;
+  z-index: 2;
+  position: absolute;
+  height: 680px;
+  transform: scale(0.4, 0.4);
+  transform-origin: top left;
+}
+.tool  {
+  width: 779px;
+  height: 650px;
+  transform: scale(0.4, 0.4);
+  transform-origin: top left;
+}
+
+
